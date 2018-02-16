@@ -1,7 +1,7 @@
 package = "wtf-plugin-honeybot-fake-welcome-data"
-version = "0.1-1"
+version = "0.1-2"
 source = {
-   url = "https://github.com/honeybot/wtf-plugin-honeybot-fake-welcome",
+   url = "git+https://github.com/honeybot/wtf-plugin-honeybot-fake-welcome",
    tag = "0.1"
 }
 description = {
