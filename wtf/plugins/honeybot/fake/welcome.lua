@@ -13,7 +13,6 @@ function _M:content(...)
   
   local pages = self:get_mandatory_parameter('pages')
   local page = pages[rand(#pages)]
-  ngx.log(ngx.ERR, "Page: "..page)
   instance:get_action(page):act()
   
 end

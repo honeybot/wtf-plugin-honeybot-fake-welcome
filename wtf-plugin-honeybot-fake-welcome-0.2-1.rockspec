@@ -1,8 +1,8 @@
 package = "wtf-plugin-honeybot-fake-welcome"
-version = "0.1-2"
+version = "0.2-1"
 source = {
    url = "git+https://github.com/honeybot/wtf-plugin-honeybot-fake-welcome",
-   tag = "0.1"
+   tag = "0.2"
 }
 description = {
    homepage = "https://github.com/honeybot/wtf-plugin-honeybot-fake-welcome",
@@ -15,6 +15,6 @@ dependencies = {
 build = {
    type = "builtin",
    modules = {
-      ["wtf.plugins.honeybot.fake.welcome.module"] = "wtf/plugins/honeybot/fake/welcome/module.lua"
+      ["wtf.plugins.honeybot.fake.welcome"] = "wtf/plugins/honeybot/fake/welcome.lua"
    }
 }
