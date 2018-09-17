@@ -13,7 +13,9 @@ function _M:content(...)
   
   local pages = self:get_mandatory_parameter('pages')
   local page = pages[rand(#pages)]
-  instance:get_action(page):act()
+  if ngx.var.request_method == "GET" then
+  	instance:get_action(page):act()
+  end
   
 end
 
